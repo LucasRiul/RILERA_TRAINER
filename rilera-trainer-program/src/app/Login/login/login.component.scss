@@ -75,7 +75,7 @@ html {
   
   h2.active {
     color: #0d0d0d;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #0d0d0d;
   }
   
   
@@ -105,7 +105,7 @@ html {
   }
   
   input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-    background-color: #39ace7;
+    background-color: #0d0d0d;
   }
   
   input[type=button]:active, input[type=submit]:active, input[type=reset]:active  {
@@ -139,7 +139,7 @@ html {
   
   input[type=text]:focus {
     background-color: #fff;
-    border-bottom: 2px solid #5fbae9;
+    border-bottom: 2px solid #0d0d0d;
   }
   
   input[type=text]:placeholder {
