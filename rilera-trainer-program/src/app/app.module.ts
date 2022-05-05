@@ -1,8 +1,9 @@
 import { NavbarModule } from './navbar/navbar.module';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BodyComponent } from './navbar/body/body.component';
@@ -13,17 +14,21 @@ import { TrainingComponent } from './navbar/training/training.component';
 import { PaymentsComponent } from './navbar/payments/payments.component';
 import { ProfileComponent } from './navbar/profile/profile.component';
 import { NgClass } from '@angular/common';
+import { LoginComponent } from './Login/login/login.component';
+import { AuthService } from './Login/login/auth.service';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NavbarModule
+    NavbarModule,
+    RouterModule.forRoot(routes)
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
