@@ -1,6 +1,6 @@
 
 export class Usuario {
 
-    nome: string;
-    senha: string;
+    public nome: string | undefined;
+    public senha: string | undefined;
 }
