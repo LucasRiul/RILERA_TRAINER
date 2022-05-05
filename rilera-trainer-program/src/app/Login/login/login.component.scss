@@ -1,8 +1,9 @@
+@import "../../../styles.scss";
 
-/* BASIC */
+
 
 html {
-    background-color: #56baed;
+    background-color: $primary;
   }
   
   body {
@@ -82,7 +83,7 @@ html {
   /* FORM TYPOGRAPHY*/
   
   input[type=button], input[type=submit], input[type=reset]  {
-    background-color: #56baed;
+    background-color: $primary;
     border: none;
     color: white;
     padding: 15px 80px;
@@ -236,7 +237,7 @@ html {
     bottom: -10px;
     width: 0;
     height: 2px;
-    background-color: #56baed;
+    background-color: $primary;
     content: "";
     transition: width 0.2s;
   }
@@ -256,3 +257,7 @@ html {
   *:focus {
       outline: none;
   } 
+
+#icon {
+  width: 200px;
+}
