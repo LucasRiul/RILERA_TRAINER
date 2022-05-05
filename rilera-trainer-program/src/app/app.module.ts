@@ -24,7 +24,7 @@ import { AuthService } from './Login/login/auth.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    AppRoutingModule ,
     NavbarModule,
     RouterModule.forRoot(routes)
   ],
