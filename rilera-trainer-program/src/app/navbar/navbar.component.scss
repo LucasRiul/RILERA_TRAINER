@@ -1,5 +1,6 @@
+@import "../../styles.scss";
 .sidenav {
-    background-color: #263238;
+    background-color: white;
     transition: all .5s ease;
     position: fixed;
     z-index: 1;
@@ -31,7 +32,7 @@
             margin-left: 1.5rem;
             font-size: 24px;
             font-weight: 700;
-            color: #fff;
+            color: #000;
         }
 
         .btn-close {
@@ -44,7 +45,7 @@
             border: none;
 
             .fa-times {
-                color: #fff;
+                color: #000;
                 font-size: 24px;
             }
         }
@@ -74,7 +75,7 @@
             display: flex;
             align-items: center;
             height: 3rem;
-            color: #f3f3f3;
+            color: #000;
             text-decoration: none;
             border-radius: 0.625rem;
             transition: all .3s ease;
@@ -95,8 +96,17 @@
 
     .sidenav-nav-item:hover{
         .sidenav-nav-link{
-            background-color: #fff;
-            color: #000;
+            background-color: $primary;
+            color: #fff;
         }
+    }
+}
+
+.active{
+    background-color: $primary;
+
+    .sidenav-link-icon,
+    .sidenav-link-text{
+        color: #fff;
     }
 }
