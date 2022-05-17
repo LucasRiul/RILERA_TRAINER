@@ -1,6 +1,5 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
-
 import { navbarData } from './nav-data';
 
 interface SideNavToggle{
@@ -21,15 +20,15 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
 
+  toggleCollapse(): void{
+    this.collapsed = !this.collapsed;
+    this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
+  }
   closeSidenav(){
     this.collapsed = false;
     this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
   }
 
-  toggleCollapse(){
-    this.collapsed = !this.collapsed;
-    this.onToggleSideNav.emit({collapsed: this.collapsed, screenWidth: this.screenWidth});
-  }
   
   ngOnInit(): void {
   }

@@ -20,13 +20,14 @@ import { AuthService } from './Login/login/auth.service';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    BodyComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule ,
+    AppRoutingModule,
     NavbarModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
   ],
   providers: [AuthService],
   bootstrap: [AppComponent]
