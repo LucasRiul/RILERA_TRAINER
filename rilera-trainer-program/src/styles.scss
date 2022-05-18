@@ -8,7 +8,7 @@ $secondary: rgb(101, 100, 100) !default;
 }
 body{
     position: relative;
-    background-color: #fff;
+    background-color: #f3f3f3;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,4 +30,10 @@ body{
     .card-body {
         padding: 1rem 1.5rem; 
     }
+}
+
+.title{
+    color: $primary;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px $secondary;
 }

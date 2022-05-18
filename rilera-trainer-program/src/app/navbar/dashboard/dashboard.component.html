@@ -1,31 +1,43 @@
-<h1>Dashboard</h1>
+<h1 class="title">Dashboard</h1>
 <div class="row">
-    <div class="col-6">
-        <div class="card">
-            <!--The content below is only a placeholder and can be replaced.-->
-            <!-- <div id="chart">
+    <div class="col-12">
+        <div class="card p-1">
+            <div id="chart" class="p-2">
                 <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
                     [dataLabels]="chartOptions.dataLabels" [grid]="chartOptions.grid" [stroke]="chartOptions.stroke"
                     [title]="chartOptions.title"></apx-chart>
-            </div> -->
+            </div>
 
-        </div>
-    </div>
-    <div class="col-6">
-        <div class="card">
-            aaaaa
         </div>
     </div>
 </div>
 <div class="row">
     <div class="col-6">
-        <div class="card">
-            aaaaa
+        <div class="card position-relative p-1">
+            <div class="row position-absolute mb-1" style="height: 20px; left: 300px;">
+                <h2 style="font-family: 'Roboto'; font-size: 20px; color: rgb(101, 100, 100);">Alunos</h2>
+            </div>
+            <div id="chart">
+                <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart"
+                    [dataLabels]="chartOptions2.dataLabels" [plotOptions]="chartOptions2.plotOptions"
+                    [responsive]="chartOptions2.responsive" [xaxis]="chartOptions2.xaxis"
+                    [legend]="chartOptions2.legend" [fill]="chartOptions2.fill"></apx-chart>
+            </div>
         </div>
+
     </div>
     <div class="col-6">
-        <div class="card">
-            aaaaa
+        <div class="card position-relative ">
+            <div class="row position-absolute mb-1" style="height: 20px; left: 270px;">
+                <h2 style="font-family: 'Roboto'; font-size: 20px; color: rgb(101, 100, 100);">Aulas na semana</h2>
+            </div>
+            <div id="chart">
+                <apx-chart [series]="chartOptions3.series" [chart]="chartOptions3.chart"
+                    [dataLabels]="chartOptions3.dataLabels" [plotOptions]="chartOptions3.plotOptions"
+                    [yaxis]="chartOptions3.yaxis" [legend]="chartOptions3.legend" [fill]="chartOptions3.fill"
+                    [stroke]="chartOptions3.stroke" [tooltip]="chartOptions3.tooltip" [xaxis]="chartOptions3.xaxis">
+                </apx-chart>
+            </div>
         </div>
     </div>
 </div>

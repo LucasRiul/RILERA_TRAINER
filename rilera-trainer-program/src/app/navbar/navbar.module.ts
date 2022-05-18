@@ -1,3 +1,4 @@
+import { DashboardModule } from './dashboard/dashboard.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -14,7 +15,6 @@ import { AppRoutingModule } from '../app-routing.module';
 
 @NgModule({
   declarations: [
-    DashboardComponent,
     PaymentsComponent,
     ProfileComponent,
     SidenavComponent,
@@ -25,6 +25,7 @@ import { AppRoutingModule } from '../app-routing.module';
   imports: [
     CommonModule,
     AppRoutingModule,
+    DashboardModule
   ],
   exports:[
     NavbarComponent

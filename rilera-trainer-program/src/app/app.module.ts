@@ -28,7 +28,6 @@ import {NgApexchartsModule } from 'ng-apexcharts';
     BrowserModule, 
     AppRoutingModule,
     NavbarModule,
-    NgApexchartsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [AuthService],
