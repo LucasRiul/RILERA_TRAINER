@@ -17,7 +17,7 @@
                 </div>
             </div>
             <div class="position-absolute end-0 top-0 col-6">
-                <fieldset class="form-group">
+                <fieldset style="margin-top: 55px; margin-left: 10px;" class="form-group">
                     <ng-select [items]="selectPlan" bindLabel="name" bindValue="id" placeholder="Selecione o plano"
                         [(ngModel)]="selectedPlan" (change)="filterByPlan()" notFoundText="Nenhum item encontrado">
                     </ng-select>
