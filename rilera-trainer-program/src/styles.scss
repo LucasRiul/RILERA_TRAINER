@@ -1,5 +1,5 @@
 $primary: #FFD100 !default;
-$secondary: rgb(52, 52, 52) !default;
+$secondary: rgb(101, 100, 100) !default;
 
 *{
     margin: 0;
@@ -8,7 +8,7 @@ $secondary: rgb(52, 52, 52) !default;
 }
 body{
     position: relative;
-    background-color: white;
+    background-color: #f3f3f3;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -30,4 +30,10 @@ body{
     .card-body {
         padding: 1rem 1.5rem; 
     }
+}
+
+.title{
+    color: $primary;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 1px 1px $secondary;
 }

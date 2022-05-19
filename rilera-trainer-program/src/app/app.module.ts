@@ -16,6 +16,7 @@ import { ProfileComponent } from './navbar/profile/profile.component';
 import { NgClass } from '@angular/common';
 import { LoginComponent } from './Login/login/login.component';
 import { AuthService } from './Login/login/auth.service';
+import {NgApexchartsModule } from 'ng-apexcharts';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { AuthService } from './Login/login/auth.service';
     BodyComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule, 
     AppRoutingModule,
     NavbarModule,
     RouterModule.forRoot(routes),
