@@ -1,2 +1,2 @@
-<navbar (onToggleSideNav)="onToggleSideNav($event)"></navbar>
+<navbar *ngIf="mostrarMenu"  (onToggleSideNav)="onToggleSideNav($event)"></navbar>
 <app-body [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-body>

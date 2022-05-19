@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { NavbarModule } from './navbar/navbar.module';
 import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
@@ -28,6 +29,7 @@ import {NgApexchartsModule } from 'ng-apexcharts';
     BrowserModule, 
     AppRoutingModule,
     NavbarModule,
+    FormsModule,
     RouterModule.forRoot(routes),
   ],
   providers: [AuthService],

@@ -1,3 +1,4 @@
+import { AuthService } from './Login/login/auth.service';
 import { Component } from '@angular/core';
 
 interface SideNavToggle {
@@ -11,6 +12,18 @@ interface SideNavToggle {
 })
 export class AppComponent {
   title = 'rilera-trainer-program';
+
+  mostrarMenu: boolean = false;
+
+  constructor(private AuthService: AuthService) {
+
+  }
+
+  ngOnInit() {
+    this.AuthService.mostrarMenuEmitter.subscribe(
+      mostrar => this.mostrarMenu = mostrar
+    );
+  }
 
   isSideNavCollapsed = false;
   screenWidth = 0;
