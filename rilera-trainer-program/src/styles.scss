@@ -1,3 +1,5 @@
+@import '~@swimlane/ngx-datatable/themes/material.scss';
+
 $primary: #FFD100 !default;
 $secondary: rgb(101, 100, 100) !default;
 
@@ -35,5 +37,12 @@ body{
 .title{
     color: $primary;
     font-family: 'Roboto', sans-serif;
-    text-shadow: 1px 1px $secondary;
+    font-weight: 1000;
+    text-shadow: 1.5px 1.5px #ccc;
+}
+
+.rowTitle{
+    width: 100%;
+    position: relative;
+    margin-bottom: 20px;
 }

@@ -17,12 +17,14 @@ import { NgClass } from '@angular/common';
 import { LoginComponent } from './Login/login/login.component';
 import { AuthService } from './Login/login/auth.service';
 import {NgApexchartsModule } from 'ng-apexcharts';
+import { NavComponent } from './nav/nav/nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    BodyComponent
+    BodyComponent,
+    NavComponent
   ],
   imports: [
     BrowserModule, 

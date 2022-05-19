@@ -124,11 +124,13 @@ export class DashboardComponent implements OnInit {
       series: [
         {
           name: "Alunos",
-          data: [44, 55, 41, 67, 22, 43, 50, 56, 62, 68, 74, 80]
+          data: [44, 55, 41, 67, 22, 43, 50, 56, 62, 68, 74, 80],
+          color: "#FFD100"
         },
         {
           name: "Alunos novos",
-          data: [13, 23, 20, 8, 13, 27, 5, 15, 7, 18, 21, 23]
+          data: [13, 23, 20, 8, 13, 27, 5, 15, 7, 18, 21, 23],
+          
         },
       ],
       chart: {

@@ -1,0 +1,177 @@
+@import "../../../styles.scss";
+@import "~@ng-select/ng-select/themes/material.theme.css";
+@import '~@swimlane/ngx-datatable/assets/icons.css';
+
+#inputPesquisar{
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    // border-color: #aaaaaa;
+    width: 100%;
+    height: 30px;
+
+}
+
+#inputPesquisar::placeholder{
+    // color: $secondary;
+    font-size: 14px;
+    font-family: 'Roboto';
+    padding-left: 5px;
+}
+
+#divSearchIcon{
+    top: 2px;
+    padding-right: 1rem;
+    .fa.fa-search{
+        color: #ccc;
+    }
+}
+
+
+.ngx-datatable {
+    //   /* width */
+    // ::-webkit-scrollbar {
+    //   height: 6.5px;
+    // }
+    
+    // /* Track */
+    // ::-webkit-scrollbar-track {
+    //   box-shadow: inset 0 0 5px grey; 
+    //   border-radius: 10px;
+    // }
+     
+    // /* Handle */
+    // ::-webkit-scrollbar-thumb {
+    //   background: rgb(160, 160, 160); 
+    //   border-radius: 10px;
+    // }
+    
+    // /* Handle on hover */
+    // ::-webkit-scrollbar-thumb:hover {
+    //   background: grey;
+    // }
+      &.bootstrap {
+        &.core-bootstrap {
+          &.height-70-vh {
+            height: 70vh !important;
+          }
+    
+          .datatable-header {
+            background-color: #fff;
+            text-transform: uppercase;
+            height: 40px !important;
+            border-top: 1px solid #fff;
+    
+            .datatable-header-cell {
+              border-bottom: 0;
+              padding: 0.75rem 1rem;
+              font-weight: bold;
+              font-size: 15px !important;
+            }
+            // sort-icon positioning
+            .datatable-header-cell-template-wrap {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              letter-spacing: 1px;
+            }
+            .sort-btn {
+              &:before {
+                font-size: 1.3rem;
+              }
+            }
+          }
+    
+          .datatable-body-row {
+            border-color: #fff;
+    
+            &.datatable-row-even {
+              background-color: initial;
+            }
+    
+            &.active {
+              background-color: gray;
+            }
+    
+            .datatable-body-cell-label {
+              .cell-line-height {
+                line-height: 1.25;
+              }
+            }
+    
+            .datatable-body-cell {
+              padding: 0.75rem 1rem;
+              display: flex;
+              align-items: center;
+            }
+          }
+    
+          .datatable-footer {
+            background-color: white;
+            color: #fff;
+            overflow: hidden;
+            margin-bottom: 1rem;
+    
+            .datatable-pager {
+              a {
+                color: #fff;
+                line-height: 20px;
+              }
+    
+              ul {
+                li:not(.disabled) {
+                  &.active,
+                  &.active:hover {
+                    vertical-align: sub;
+                    a {
+                      color: white !important;
+                      border-radius: 50%;
+                      width: 32px;
+                      height: 32px;
+                      padding: 5px;
+                    }
+                  }
+                  &:hover {
+                    a {
+                      background-color: transparent !important;
+                    }
+                  }
+                }
+    
+                li {
+                  margin: 2px 0px 11px 0px !important;
+                  &:not(.disabled):hover {
+                    a {
+                      background-color: white;
+                    }
+                  }
+    
+                  &.disabled {
+                    a {
+                    }
+                  }
+                }
+              }
+              .pager {
+                border-top-left-radius: 28px;
+                border-bottom-left-radius: 28px;
+                border-top-right-radius: 28px;
+                border-bottom-right-radius: 28px;
+                height: 36px;
+              }
+            }
+            .page-count {
+            }
+          }
+    
+          &.header-height-50 {
+            .datatable-header {
+              height: 50px !important;
+            }
+          }
+          .datatable-body-cell {
+            overflow: visible !important;
+          }
+        }
+      }
+    }
