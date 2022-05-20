@@ -15,6 +15,7 @@ export class StudentsComponent implements OnInit {
 
   public space = ".    ";
   public rows;
+  public studentsList;
   public ColumnMode = ColumnMode;
   public selectedPlan;
   public selectedName;
@@ -32,7 +33,9 @@ export class StudentsComponent implements OnInit {
     this.rows = this._studentsService.filterRows(cal, this.selectedPlan)
   }
   ngOnInit(): void {
-    this.rows = this._studentsService.getStudents();
+    this.studentsList = this._studentsService.getStudents();
+
+    this.rows = this.studentsList;
   }
 
 }
