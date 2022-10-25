@@ -1,18 +1,40 @@
+import { FormsModule } from '@angular/forms';
+import { NavbarModule } from './navbar/navbar.module';
+import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule, routes } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BodyComponent } from './navbar/body/body.component';
+import { SidenavComponent } from './navbar/sidenav/sidenav.component';
+import { DashboardComponent } from './navbar/dashboard/dashboard.component';
+import { StudentsComponent } from './navbar/students/students.component';
+import { TrainingComponent } from './navbar/training/training.component';
+import { PaymentsComponent } from './navbar/payments/payments.component';
+import { ProfileComponent } from './navbar/profile/profile.component';
+import { NgClass } from '@angular/common';
+import { LoginComponent } from './Login/login/login.component';
+import { AuthService } from './Login/login/auth.service';
+import {NgApexchartsModule } from 'ng-apexcharts';
+import { NavComponent } from './nav/nav/nav.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    BodyComponent,
+    NavComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, 
+    AppRoutingModule,
+    NavbarModule,
+    FormsModule,
+    RouterModule.forRoot(routes),
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
