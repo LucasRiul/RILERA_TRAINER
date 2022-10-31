@@ -8,6 +8,7 @@ import { StudentsComponent } from './navbar/students/students.component';
 import { TrainingComponent } from './navbar/training/training.component';
 
 export const routes: Routes = [
+  { path: '', component: LoginComponent },
   { path: 'login', component: LoginComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'students', component: StudentsComponent },
