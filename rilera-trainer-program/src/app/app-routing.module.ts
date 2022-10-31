@@ -14,9 +14,9 @@ export const routes: Routes = [
   { path: 'training', component: TrainingComponent },
   { path: 'payments', component: PaymentsComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: '', component: LoginComponent }
+  { path: '', redirectTo: "/login", pathMatch: 'full' }
 
-];  
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
